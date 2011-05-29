@@ -116,18 +116,6 @@ if ($mode == 'post' && !empty($post_data['forum_post_tpl']))
 ]]></action>
 			</edit>
 		</open>
-		<open src="language/en/acp/forums.php">
-			<edit>
-				<find><![CDATA[?>]]></find>
-				<action type="before-add"><![CDATA[//-- mod : Posting Template ------------------------------------------------------------
-//-- add
-$lang = array_merge($lang, array(
-	'FORUM_POST_TPL'					=> 'Posting template',
-	'FORUM_POST_TPL_EXPLAIN'			=> 'The posting template is the text that appears in the textarea when starting a new topic in this forum. If you don\'t wish to use it, just leave it blank.',
-));
-//-- fin mod : Posting Template --------------------------------------------------------]]></action>
-			</edit>
-		</open>
 		<php-installer><![CDATA[pt_mod_install.php]]></php-installer>
 	<diy-instructions lang="en"><![CDATA[*** NOTE: If you are installing via Automod you may skip to step 2 ***
 1. Make all edits to all files and upload them to your forum.    
