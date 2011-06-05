@@ -93,6 +93,13 @@ if ($mode == 'post' && !empty($post_data['forum_post_tpl']))
 		</open>
 		<open src="includes/acp/acp_forums.php">
 			<edit>
+				<find><![CDATA[		$user->add_lang('acp/forums');]]></find>
+				<action type="replace-with"><![CDATA[//-- mod : Posting Template ------------------------------------------------------------
+//-- add mods/info_pt_mod into the array
+		$user->add_lang(array('acp/forums','mods/info_pt_mod'));
+//-- fin mod : Posting Template --------------------------------------------------------]]></action>
+			</edit>		
+			<edit>
 				<find><![CDATA[						'forum_desc_bitfield'	=> '',]]></find>
 				<action type="after-add"><![CDATA[//-- mod : Posting Template ------------------------------------------------------------
 //-- add
@@ -121,7 +128,7 @@ if ($mode == 'post' && !empty($post_data['forum_post_tpl']))
 1. Make all edits to all files and upload them to your forum.    
 2. Browse to the file pt_mod_install.php in the root of your forum to make the database changes (eg, http://mysite.com/pt_mod_install.php).
 3. Delete the pt_mod_install.php file from the root of your forum.
-4. Set your posting template per which ever forum you want one to have. 
+4. Set your posting template per which ever forum you want to have a posting template. 
 5. Enjoy the Mod!!
 	]]></diy-instructions>		
 	</action-group>	
