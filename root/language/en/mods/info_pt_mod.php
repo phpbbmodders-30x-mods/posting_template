@@ -36,7 +36,7 @@ $lang = array_merge($lang, array(
 	'PT_FORUM_TABLE_UPDATED'	=> 'The forum table has been updated',
 	'PT_DB_ENTRY_REMOVED'		=> 'The database column has been removed',
 	'FORUM_POST_TPL'					=> 'Posting template',
-	'FORUM_POST_TPL_EXPLAIN'			=> 'The posting template is the text that appears in the textarea when starting a new topic in this forum. If you don’t wish to use it, just leave it blank.',	
+	'FORUM_POST_TPL_EXPLAIN'			=> 'The posting template is the text that appears in the textarea when starting a new topic in this forum. If you donâ€™t wish to use it, just leave it blank.',	
 ));
 
 ?>
